@@ -2,14 +2,13 @@
 
 <p style="text-align:justify;">The Importance of Morse Code Abbreviations emerged from the constraints of early telegraph systems. These systems were often slow, and communication was billed per word, incentivizing users to condense their messages. As a result, telegraph operators developed a wide array of abbreviations to express familiar words, phrases, or commands with fewer characters. This innovation helped minimize costs and expedite the transmission process. These morse code abbreviations have the fundamental elements as primary signal components.</p>
 
-
-> Primary signal components:
+#### Primary signal components:
 1. Dots (.): These are represented as short signals in Morse code.
 2. Dashes (-): In contrast, dashes are depicted as longer signals.
 
-### Basic Morse Code Abbreviations Elements:
+#### Basic Morse Code Abbreviations Elements:
 
-> Here we have some basic morse code abbreviation elements.
+Here we have some basic morse code abbreviation elements.
 
 1. DE (From): Morse code abbreviation "DE" is used to represent the word "from." It is frequently employed in Morse code messages to indicate the source or sender of the communication.
 
