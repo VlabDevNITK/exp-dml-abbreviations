@@ -1,142 +1,261 @@
- {
+{
   "version": 2.0,
   "questions": [
     {
-      "question": "Which Morse code sequence is used for the number 0?",
+      "question": "What does the Morse code abbreviation 'AA' represent?",
       "answers": {
-        "a": ".-...",
-        "b": "-..--",
-        "c": "..-...",
-        "d": "-----"
+        "a": "Answer",
+        "b": "All after",
+        "c": "Antenna",
+        "d": "End of message"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": "In Morse code, each numeral is represented by a unique combination of dots (.) and dashes (-). The Morse code sequence for the number 0 is \"-----.\""
-      },
-      "correctAnswer": "d",
-      "difficulty": "Beginner"
-    },
-    {
-      "question": "Morse code for the number 2 is:",
-      "answers": {
-        "a": "..---",
-        "b": "-....",
-        "c": ".-..-",
-        "d": "--.-"
-      },
-      "explanations": {
-        "a": "For the number 2, the Morse code is \"..---\"",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": "Beginner"
-    },
-    {
-      "question": "Which Morse code character represents the number 7?",
-      "answers": {
-        "a": "-.-.-",
-        "b": "--...",
-        "c": ".-..-",
-        "d": "..---"
-      },
-      "explanations": {
-        "a": "",
-        "b": "For the number 7, the Morse code is \"--...\"",
-        "c": "",
-        "d": ""
+        "a": "'AA' in Morse code does not represent 'Answer.'",
+        "b": "'AA' stands for 'All after' in Morse code, indicating that the message following this abbreviation is intended for a specific station.",
+        "c": "'AA' is not related to 'Antenna.'",
+        "d": "'AA' does not signify the 'End of message.'"
       },
       "correctAnswer": "b",
       "difficulty": "Beginner"
     },
     {
-      "question": "What Morse code symbol corresponds to the number 99?",
+      "question": "In Morse code, 'B4' stands for?",
       "answers": {
-        "a": ".----",
-        "b": "-..-  -..-",
-        "c": "----. ----.",
-        "d": "-.-.- -..-"
+        "a": "Broadcast",
+        "b": "Before",
+        "c": "Bad",
+        "d": "Back or break"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "For the number 99, the Morse code is \"----. ----.\"",
-        "d": ""
+        "a": "'B4' in Morse code does not stand for 'Broadcast.'",
+        "b": "'B4' in Morse code is an abbreviation for 'Before,' signifying a reference to something that occurred earlier",
+        "c": "'B4' in Morse code does not stand for 'Bad.'",
+        "d": "'B4' in Morse code does not stand for Back or break."
+      },
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What does 'HW?' signify in Morse code communication?",
+      "answers": {
+        "a": "How do you copy me? What about you?",
+        "b": "Happy weekend",
+        "c": "Hear well",
+        "d": "High wattage"
+      },
+      "explanations": {
+        "a": "'HW?' is a Morse code abbreviation used to inquire about the quality of reception between stations.",
+        "b": "HW? does not signify 'Happy weekend' in Morse code communication.",
+        "c": "HW? does not stand for 'Hear well' in Morse code. It is a query about reception quality.",
+        "d": "HW? does not represent 'High wattage' in Morse code."
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "When using Morse code, '73' is commonly understood as?",
+      "answers": {
+        "a": "A friendly greeting",
+        "b": " Best regards",
+        "c": "Bad luck",
+        "d": "Backward motion"
+      },
+      "explanations": {
+        "a": "'A friendly greeting' is not the primary meaning of '73' in Morse code; it is typically used to convey 'Best regards.' This option is incorrect.",
+        "b": "73' is a widely recognized Morse code abbreviation used to convey 'Best regards'.",
+        "c": "'Bad luck' is not a commonly understood meaning of '73' in Morse code. This option is incorrect.",
+        "d": "'Backward motion' is not a commonly understood meaning of '73' in Morse code. This option is incorrect."
+        
+      },
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What does the Morse code abbreviation 'DR' indicate?",
+      "answers": {
+        "a": "Drive carefully",
+        "b": "Down",
+        "c": "Dear",
+        "d": "Double response"
+      },
+      "explanations": {
+        "a": "'Drive carefully' is not a common Morse code abbreviation.",
+        "b": "'Down' is not a Morse code abbreviation for 'DR.'",
+        "c": "'DR' is an abbreviation in Morse code that typically represents 'Dear,' often used in personal messages.",
+        "d": "'Double response' is not a common Morse code interpretation for 'DR.'"
       },
       "correctAnswer": "c",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "In Morse code Abbreviations, 'BTW' is used to convey?",
+      "answers": {
+        "a": "Back to work",
+        "b": "By the way",
+        "c": "Between",
+        "d": "Best wishes"
+      },
+      "explanations": {
+        "a": "Back to work is not a Morse code abbreviation.",
+        "b": "By the way",
+        "c": "Between' is abbreviated as 'BTWN' in Morse code, not 'BTW'",
+        "d": "Best wishes is abbreviated as 73 in Morse code, not BTW"
+      },
+      "correctAnswer": "b",
       "difficulty": "Intermediate"
     },
     {
-      "question": "What is the Morse code representation for the number 57?",
+      "question": "Which Morse code abbreviation representation corresponds to the letter 'U'?",
       "answers": {
-        "a": "-....",
-        "b": ".....",
-        "c": ".....--...",
-        "d": "-....."
+        "a": "'...-' and hi",
+        "b": "--. and your",
+        "c": "...-. and unit",
+        "d": "..- and you."
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "For the number 57, the Morse code is \".....--...\"",
-        "d": ""
+        "a": "This option does not represent the Morse Code abbreviation",
+        "b": "This option does not represent the Morse Code abbreviation",
+        "c": "This option does not represent the Morse Code abbreviation",
+        "d": "..- in Morse code represents the letter 'U,' and 'you' is a common English word. "
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "Intermediate"
     },
     {
-      "question": "Write the Morse code for the number 09.",
+      "question": "What is the Morse code abbreviation 'CBA'?",
       "answers": {
-        "a": "----- --...",
-        "b": ".---- .....-",
-        "c": "---..",
-        "d": ".....-"
+        "a": "Callbook address",
+        "b": "Corrected broadcast announcement",
+        "c": "Circuit breaker alert",
+        "d": "Continuous broadcasting arrangement"
       },
       "explanations": {
-        "a": "For the number 09, the Morse code is \"----- --...\"",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "CBA is a Morse code abbreviation used to represent 'Callbook address,' often used in amateur radio communication.",
+        "b": "Corrected broadcast announcement is not a Morse code abbreviation.",
+        "c": "Circuit breaker alert is not a Morse code abbreviation",
+        "d": "Continuous broadcasting arrangement is not a Morse code abbreviation"
       },
       "correctAnswer": "a",
       "difficulty": "Intermediate"
     },
     {
-      "question": "Translate the following Morse code sequence into numbers: \"...-- ...-- ...--\"",
+      "question": "What does 'SK' signify in Morse code communication?",
       "answers": {
-        "a": "112",
-        "b": "222",
-        "c": "333",
-        "d": "444"
+        "a": "Special knowledge",
+        "b": "Start keying",
+        "c": "Stop keying",
+        "d": "Silent key"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "The complete translation is \"333,\" and option 'b' corresponds to this sequence.",
-        "d": ""
+        "a": "Special knowledge is not a Morse code abbreviation therefore option is incorrect",
+        "b": "Start keying is not a Morse code abbreviation",
+        "c": "In Morse code, 'SK' is used to indicate 'Stop keying.' It is often transmitted at the end of a conversation or transmission to inform the receiving station that the sender has finished transmitting.",
+        "d": "Silent key is not a Morse code abbreviation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "In Morse code, 'OPR' is commonly used to represent?",
+      "answers": {
+        "a": "Operation",
+        "b": "Operator",
+        "c": "Open relay",
+        "d": "Overpowered"
+      },
+      "explanations": {
+        "a": "This option is not represent Morse Code OPR Abbreviation",
+        "b": "OPR in Morse code stands for 'Operator' and is often used in various contexts to refer to operational activities.",
+        "c": "Open relay is not a Morse code abbreviation ",
+        "d": "Overpowered is not a Morse code abbreviation"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "When a Morse code operator uses 'CONDX,' they are referring to?",
+      "answers": {
+        "a": "Complex directions",
+        "b": "Conduction and transmission",
+        "c": "Conditions",
+        "d": "Continuous Diving"
+      },
+      "explanations": {
+        "a": "Complex directions is not a Morse code abbreviation",
+        "b": "Conduction and transmission is not a Morse code abbreviation",
+        "c": "'CONDX' in Morse code is an abbreviation for Conditions.",
+        "d": "Continuous Diving is not a Morse code abbreviation"
       },
       "correctAnswer": "c",
       "difficulty": "Advanced"
     },
     {
-      "question": "Decode this Morse code number: \"----. ---.. .---- ..---\"",
+      "question": "What does 'RX' signify in Morse code?",
       "answers": {
-        "a": "9128",
-        "b": "1928",
-        "c": "9281",
-        "d": "9812"
+        "a": "Re-examine",
+        "b": "Receiver",
+        "c": "Retransmit",
+        "d": "Receiver operating"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": " The correct decoding is \"9812\" and option 'd' (\"9812\") is the accurate representation of the Morse code."
+        "a": "Re-examine is not a Morse code abbreviation",
+        "b": "'RX' in Morse code stands for 'Receiver,' referring to the equipment used to receive signals.",
+        "c": "Retransmit is not a Morse code abbreviation",
+        "d": "Receiver operating is not a Morse code abbreviation ,it is the Receiver"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "b",
+      "difficulty": "Advanced"
+    },
+    {
+      "question": "What does 'PSE' signify in Morse code communication?",
+      "answers": {
+        "a": "Please",
+        "b": "Patient",
+        "c": "Potential",
+        "d": "Postpone"
+      },
+      "explanations": {
+        "a": "PSE is a Morse code abbreviation for 'Please,' used to make polite requests or inquiries.",
+        "b": "This option does not represent PSE in Morse Code abbreviations",
+        "c": "Potential is not a Morse Code abbreviation" ,
+        "d": "Postpone is not a Morse Code abbreviation"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Advanced"
+    },
+    {
+      "question": "In Morse code, what does the abbreviation 'FER' stand for?",
+      "answers": {
+        "a": "For",
+        "b": "Fine business",
+        "c": "Forward",
+        "d": "Frequency"
+      },
+      "explanations": {
+        "a": "'FER' in Morse code represents 'For'.",
+        "b": "Fine business is abbreviated as FB in Morse code, not FER",
+        "c": "This is not the option for FER",
+        "d": "Frequency does not represent for Morse Code abbreviation FER"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Advanced"
+    },
+    {
+      "question": "What is the purpose of the Morse code abbreviation 'CQ'?",
+      "answers": {
+        "a": "To request silence on the channel",
+        "b": "To indicate the end of the message",
+        "c": "General call for a QSO",
+        "d": "To apologize for interference"
+      },
+      "explanations": {
+        "a": "To request silence on the channel is not a Morse code abbreviation for the given abbreviation ",
+        "b": "To indicate the end of the message is abbreviated as AR in Morse code, not CQ”",
+        "c": "CQ is a Morse code abbreviation used as a general call to invite any station to establish communication (QSO).",
+        "d": "To apologize for interference does not represent for Morse Code abbreviation CQ"
+      },
+      "correctAnswer": "c",
       "difficulty": "Advanced"
     }
-    
   ]
 }

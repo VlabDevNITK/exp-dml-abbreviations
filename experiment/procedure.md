@@ -1,21 +1,28 @@
-### These procedure steps will be followed on the simulator:
+### These procedure steps will be followed on the simulator  
+1.Open the simulation of Abbreviations by navigating through the introductory paragraph, and then proceed by selecting the "NEXT" button located in the bottom right corner.
 
-1.Open the simulation of Morse code Syntax by navigating through the introductory paragraph,and then proceed by selecting the next button located at bottom right corner.
+![Image 1](images/1.png)
 
-![image1](images/image1.png)
+2.Select the abbreviations by clicking below "Click Here" button.
 
-2.Select a number from the slider and click submit button.
+![Image 2](images/2.png)
 
-![image2](images/image2.png)
+3.After clicking on the "Click Here" button, the Morse Code Abbreviations Table will display. Select the required abbreviation.
 
-3.Click on the Hint To Remember button to give an example of the Morse Code.
+![Image 3](images/3.png)
 
-![image3](images/image3.png)
 
-4.Click on the play button to play the Morse Code syntax.
+4.After selecting the required abbreviation, the selected abbreviation will display at the top, and click on the submit button.
 
-![image4](images/image4.png)
+![Image 4](images/4.png)
 
-5.After the display of morse code, click on repeat button. It will redirect to STEP1 for selecting a new Morse Code Syntax.
+5.Click on the “Play” button to generate the Morse Code with a tone
+equivalent to the selected abbreviation.
 
-![image5](images/image5.png)
+![Image 5](images/5.png)
+
+6.To go back to step1 click on the repeat button. .
+
+![Image 6](images/6.png)
+
+

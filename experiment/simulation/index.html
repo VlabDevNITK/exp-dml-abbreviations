@@ -1,141 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta 	 charset="UTF-8">
-<title>SOLVE</title>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-<script type="text/javascript" src="js/script.js"></script>
-<style>
-.popup
-{
-	border-radius:5px;
-	background-color:black;
-	color:white;
-	padding:5px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  left:102px;
-  visibility: hidden;
-  width: 550px;
-  background-color: black;
-  color: #fff;
-  border-radius: 6px;
-  padding: 10px 10px 10px 10px;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 100;
- /*text-align:center; */
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script defer type="text/javascript"></script>
 </head>
+<style>
+     .hidden {
+            display: none;
+        }
+        .scrollable-container {
+            max-height: 180px; /* Set the desired height for the scrollable container */
+            overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+            border: 1px solid #ccc; /* Add a border for better visibility */
+            max-width: 400px;
+        }
+        
+</style>
 
 <body style="margin:0; font-family:verdana;">
-<div id="simscreen">
-<div id="title"><h3>Exploring Morse Code: Numbers</h3></div>
 
-<div class="simsubscreen" id="canvas0" >
-	<h4 class="incanvas">Objective:</h4>
-	<p class="incanvas" style="font-size:14px;">To acquire the ability to receive and understand Morse code transmissions of numbers.</p>
-    <!-- <p></p> --><br/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script> -->
+    
+    <div id="simscreen">
+    <div id="title"><h3>EXPLORING MORSE CODE : ABBREVIATIONS </h3></div>
+    
+    <div class="simsubscreen" id="canvas0" >    
+        <h4 class="incanvas">Objective :</h4> <br> 
+        <p class="incanvas" style="font-size:14px;">To expedite communication by using shorter representations for common words, alphabet, numbers, and providing context, thereby enhancing the efficiency of Morse code transmissions. </p><br/>
+        
+        &nbsp;<span class="tooltip" style="border-bottom:1px ; color:black; top:20px; cursor:pointer;"><strong>Description :</strong> <br> <br>
+        <!-- <span  class="tooltiptext" style="font-size:14px; text-align:justify;">Descripton goes here</span></span> -->
+        <p class="para" style="text-align: justify; font-size: 14px;">Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment. It is a system of dots and dashes that can be used to send messages over long distances. It was originally used by telegraph operators to send messages using electrical pulses. Radio communicators later adapted the code to use it as an auditory language.
+        </p>
+        <p class="para" style="text-align: justify;font-size: 14px;" >Morse code abbreviations serve the purpose of speeding up communication by reducing the length of messages. In Morse code, each letter, number, or symbol is represented by a combination of dots and dashes. By using abbreviations, operators can convey information more quickly, which is crucial, especially in situations where efficiency and brevity are essential.</p>
+        
+    </div>
+    
+    
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <!-- <p class="steptext" style="font-family: verdana;font-size: 14px";>&nbsp;Select the abbreviations from drop down menu.</p> <br><br> <br> <br> -->
+        <p class="steptext" style="font-family: verdana;font-size: 14px";>&nbsp;Select the abbreviations by clicking below "Click Here" button.</p> <br><br> <br> <br>
+        <div id="selectedOption"></div>
+        <!-- <form action="" name="dropForm" class="alphasel" style="padding: 20px;" > -->
+            
+          Select the abbreviations : <span id="message"  class="messageAbr" ></span>
+          
 
-	<br>
-	<h4 class="incanvas">Description:</h4>
+            <input type="text" id="alphabetInput" placeholder="Enter your selection" class="alphabetInput" style="display: none;">
+            <button id="showMenuButton" onclick="showMenu()">Click Here</button>
+            <button id="buttonAbr"  style="display: none;" onclick="submitStepOne();"   >Submit</button>
+            <button id="nextButton1" style="display: none;" onclick="submitStepOne();">Submit</button>
 
-	<p  style="text-align: justify;padding-right: 40px;font-size: 14px;margin: 2px;margin-top: 5px;line-height: 1.5;">
-        Morse code serves as a means of conveying textual information through a series of intermittent tones, lights, or clicks. Its unique encoding allows it to be comprehended directly by a proficient listener or observer, eliminating the need for specialized equipment. It is a system of dots and dashes that can be used to send messages over long distances. It was originally used by telegraph operators to send messages using electrical pulses. Radio communicators later adapted the code to use it as an auditory language.
-<br>
-        <br>
-        Morse code can be used to send messages using Wires, Radios, Sound, Light.
-        Messages can be sent by Tapping, Drumming, Buzzing, Clicking, or flashing light.
-        Morse code is still used today by many ham radio operators. It's a recognised mode of communication in the amateur radio community, and some operators enjoy the challenge and efficiency of using Morse code for long-distance communication.It is also used in emergency signals and in technology to help disabled people communicate.</p>	
-</div>
+           <div class="menu-container hidden">
+            <div class="left-menu left column">
+              
+                <div class="table-container">
+                <table style="border: 1px solid grey; width: 450px; margin: 10px;">
+                    <tr>
+                        <td>
+                            
+                <ul class="box-container">
+                    <div class="box"  onclick="displayMessage('AA'); displayMeaning('AA: All after')">AA</div>
+                    <div class="box" onclick="displayMessage('AGN');displayMeaning('AGN: Again')">AGN</div>
+                    <div class="box" onclick="displayMessage('ANS'); displayMeaning('ANS: Answer')">ANS</div>
+                    <div class="box" onclick="displayMessage('ANT');displayMeaning('ANT: Antena')">ANT</div>
+                    <div class="box" onclick="displayMessage('AR');displayMeaning('AR: End of message')">AR</div>
+                    <div class="box" onclick="displayMessage('AS');displayMeaning('AS: Waiting period')">AS</div>
+                    <div class="box" onclick="displayMessage('B4');displayMeaning('B4: Before')">B4</div>
+                    
+                </ul>
+                <ul class="box-container">
+                 
+                    <div class="box" onclick="displayMessage('BC');displayMeaning('BC: Broadcast')">BC</div>
+                    <div class="box" onclick="displayMessage('BD');displayMeaning('BD: Bad')">BD</div>
+                    <div class="box" onclick="displayMessage('BK');displayMeaning('BK: Back or break')">BK</div>
+                    <div class="box" onclick="displayMessage('BN');displayMeaning('BN: Been, being')">BN</div>
+                    <div class="box" onclick="displayMessage('BTW');displayMeaning('BTW: By the way')">BTW</div>
+                    <div class="box" onclick="displayMessage('BURO');displayMeaning('BURO: QSL bureau')">BURO</div>
+                    <div class="box" onclick="displayMessage('C');displayMeaning('C: Correct, yes')">C</div>
+                </ul>
+                <ul class="box-container">
+                   
+                    <div class="box" onclick="displayMessage('CBA');displayMeaning('CBA: Callbook address')">CBA</div>
+                    <div class="box" onclick="displayMessage('CFM');displayMeaning('CFM: Confirm')">CFM</div>
+                    <div class="box" onclick="displayMessage('CL');displayMeaning('CL: Closing station down')">CL</div>
+                    <div class="box" onclick="displayMessage('CLG');displayMeaning('CLG: Calling')">CLG</div>
+                    <div class="box" onclick="displayMessage('CLR');displayMeaning('CLR: Clear')">CLR</div>
+                    <div class="box" onclick="displayMessage('CONDX');displayMeaning('CONDX: Conditions')">CONDX</div>
+                    <div class="box" onclick="displayMessage('CPI');displayMeaning('CPI: Copy')">CPI</div>
+                    <div class="box" onclick="displayMessage('CPY');displayMeaning('CPY: Copy')">CPY</div>
+                    <div class="box" onclick="displayMessage('CQ');displayMeaning('CQ: General call for a QSO (contact)')">CQ</div>
+                    <div class="box" onclick="displayMessage('CW');displayMeaning('CW: Continuous waves (Morse code) ')">CW</div>
 
-<div id="nav">
-	
-	<img id="nextButton" onclick="navNext()" src="images/Next.png" alt="" /></a>
+                    <div class="box" onclick="displayMessage('DE');displayMeaning('DE: From')">DE</div>
+                    <div class="box" onclick="displayMessage('DR');displayMeaning('DR: Dear')">DR</div>
+                    <div class="box" onclick="displayMessage('DWN');displayMeaning('DWN: Down')">DWN</div>
+                    <div class="box" onclick="displayMessage('DX');displayMeaning('DX: Long distance contact, rare station ')">DX</div>
 
-</div>
+                    <div class="box" onclick="displayMessage('ES');displayMeaning('ES: And')">ES</div>
+                    <div class="box" onclick="displayMessage('FB');displayMeaning('FB: Fine business, very good')">FB</div>
+                    <div class="box" onclick="displayMessage('FER');displayMeaning('FER: For')">FER</div>
 
-<div class="simsubscreen" id="canvas1" style="visibility:hidden;">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;1&nbsp;</span>
-	<p class="steptext">&nbsp;Select a number in the range of 0-9.</p>
-	<br><br><br><br><br><br>
+                    <div class="box" onclick="displayMessage('GUD');displayMeaning('GUD: Good')">GUD</div>
+                    <div class="box" onclick="displayMessage('GA');displayMeaning('GA: Good afternoon or go ahead')">GA</div>
+                    <div class="box" onclick="displayMessage('GB');displayMeaning('GB: Good bye ')">GB</div>
+                    <div class="box" onclick="displayMessage('GD');displayMeaning('GD: Good or Good day')">GD</div>
+                    <div class="box" onclick="displayMessage('GE');displayMeaning('GE: Good evening ')">GE</div>
+                    <div class="box" onclick="displayMessage('GM');displayMeaning('GM: Good morning')">GM</div>
+                    <div class="box" onclick="displayMessage('GN');displayMeaning('GN: Good night')">GN</div>
+                    <div class="box" onclick="displayMessage('GND');displayMeaning('GND: Ground ')">GND</div>
+                    <div class="box" onclick="displayMessage('GP');displayMeaning('GP: Ground-plane antenna ')">GP</div>
+                    <div class="box" onclick="displayMessage('GND');displayMeaning('GUD: Good')">GUD</div>
 
-	<label for="textInput" class="selectNumber">Select the number: </label>
-                <input type="number" id="numberInput" name="numberInput" min="0" max="9" maxlength="1" oninput="numberMorse()" >
-                <br><br><br><br> <br><br>
-                <label for="slider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <!-- <input type="range" id="slider" min="0" max="9" step="1">	 -->
-
-            <input type="range" min="0" max="9" id="slider" min="0" max="9" step="1" onchange="numberMorse()">
-            <p style="text-align: left;font-size: small;margin-top: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</p>
-                <br><br>
-	
-	<br><br>
-	<p id="warningMessage" class="warning" style="color: red;">Error: Only numeric values in the range of 0 - 9 allowed</p>
-	<div id="nav">
-		
-	<button type="submit" onclick="navNext()" id="submit" class="button" value="Submit">Submit</button>
-	
-	</div>
-	</div>
-
-</div>
-   <div class="simsubscreen" id="canvas2" name="canvas2" style="visibility:hidden;">
-	<strong class="incanvas">STEP</strong>
-	<span class="circlebg">&nbsp;2&nbsp;</span>
-	<p class="steptext">&nbsp;Click on the play button to observe the Morse code equivalent of the number entered.
-	</p>
-	<br><br><br><br><br><br>
- 
-	 <div>
-		<p class="morse" id="numberMorse" ></p>
-		<button  class="plybtn" id="ply" onclick="play()" >Play</button>
-		<p id="mdisp" class="mdisplay" style="border: black;"></p>
-		<p class="selectmorse" >Selected Number:</p>
-
-		
-		<!--  -->
-
-		<p class="ad">keep audio on!!
-		</p>
-		<p class="dm" id="dm1" style="align-items: center;"></p>
-        <!-- morse code  -->
-		<p><span  id="morsedisplay" class="morsedisplay1" > </span></p> 	
-		
-		<button id="hintButton" onclick="hint()" >HINT TO REMEMBER</button>
-		<img id="morseImage" style="visibility: hidden;" src="images/MorseCode.png" alt=""></a>
-		
-		<button id="repeat" class="repeat1" onclick="repeat()" style="visibility:hidden;" ><i class="material-icons">repeat</i>Repeat	</button>
-			
-	
-	
-		
-	 </div>
-	
-</div>
+                    <div class="box" onclick="displayMessage('HI');displayMeaning('HI: Laughter on CW')">HI</div>
+                    <div class="box" onclick="displayMessage('HR');displayMeaning('Here or ham radio ')">HR</div>
+                    <div class="box" onclick="displayMessage('HV');displayMeaning('HV: Have')">HV</div>
+                    <div class="box" onclick="displayMessage('HW?');displayMeaning('HW?: How do you copy me? ')">HW?</div>
+                    <div class="box" onclick="displayMessage('K');displayMeaning('K: Please transmit')">K</div>
+                    <div class="box" onclick="displayMessage('KN');displayMeaning('KN: Only the station I am working should transmit')">KN</div>
+                    
 
 
-<img class ="" id="arrow1" style="visibility:hidden;"/>
+                    <div class="box" onclick="displayMessage('LID');displayMeaning('LID: Poor operator ')">LID</div>
+                    <div class="box" onclick="displayMessage('LP');displayMeaning('LP: Log-periodic antenna or long path ')">LP</div>
+                    <div class="box" onclick="displayMessage('LSB');displayMeaning('LSB: Lower sideband')">LSB</div>
+                    <div class="box" onclick="displayMessage('LW');displayMeaning('LW: Long-wire antenna ')">LW</div>
 
-<div id="copyright"> &copy; 2023-<script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
-</div>
-</body> 
+                    <div class="box" onclick="displayMessage('MGR');displayMeaning('MGR: QSL manager')">MGR</div>
+                    <div class="box" onclick="displayMessage('MNI');displayMeaning('MNI: Many ')">MNI</div>
+                    <div class="box" onclick="displayMessage('MSG');displayMeaning('MSG: Message')">MSG</div>
+                    <div class="box" onclick="displayMessage('NIL');displayMeaning('NIL: Nothing heard or no copy  ')">NIL</div>
+                    <div class="box" onclick="displayMessage('NR');displayMeaning('NR: Near')">NR</div>
+                    <div class="box" onclick="displayMessage('NW');displayMeaning('NW: Now or North-West ')">NW</div>
+
+                    <div class="box" onclick="displayMessage('OM');displayMeaning('OM: Old man (amateur radio operator)  ')">OM</div>
+                    <div class="box" onclick="displayMessage('OP');displayMeaning('OP: Operator name ')">OP</div>
+                    <div class="box" onclick="displayMessage('OPR');displayMeaning('OPR: Operator, operate')">OPR</div>
+
+                    <div class="box" onclick="displayMessage('PSE');displayMeaning('PSE: Please ')">PSE</div>
+                    <div class="box" onclick="displayMessage('PO');displayMeaning('PO: Power output ')">PO</div>
+                    <div class="box" onclick="displayMessage('PWR');displayMeaning('PWR: Power')">PWR</div>
+
+                    <div class="box" onclick="displayMessage('R');displayMeaning('R: Message received or correct')">R</div>
+                    <div class="box" onclick="displayMessage('RCV');displayMeaning('RCV: Receive ')">RCV</div>
+                    <div class="box" onclick="displayMessage('RCVD');displayMeaning('RCVD: Received ')">RCVD</div>
+                    <div class="box" onclick="displayMessage('RIG');displayMeaning('RIG: Equipment')">RIG</div>
+                    <div class="box" onclick="displayMessage('RPRT');displayMeaning('RPRT: Report ')">RPRT</div>
+                    <div class="box" onclick="displayMessage('RPT');displayMeaning('RPT: Repeat ')">RPT</div>
+
+                    <div class="box" onclick="displayMessage('SIG');displayMeaning('SIG: Signal')">SIG</div>
+                    <div class="box" onclick="displayMessage('SK');displayMeaning('SK: This is my last transmission (stop keying) ')">SK</div>
+                    <div class="box" onclick="displayMessage('SN');displayMeaning('SN: Soon ')">SN</div>
+                    <div class="box" onclick="displayMessage('SNW');displayMeaning('SNW: Snow ')">SNW</div>
+                    <div class="box" onclick="displayMessage('SP');displayMeaning('SP: Short path  ')">SP</div>
+                    <div class="box" onclick="displayMessage('SRI');displayMeaning('SRI: Sorry')">SRI</div>
+                    <div class="box" onclick="displayMessage('STN');displayMeaning('STN: Station ')">STN</div>
+                    <div class="box" onclick="displayMessage('SWL');displayMeaning('SWL: Short waves listener  ')">SWL</div>
+
+                    <div class="box" onclick="displayMessage('TEMP');displayMeaning('TEMP: Temperature ')">TEMP</div>
+                    <div class="box" onclick="displayMessage('TEST');displayMeaning('TEST: Contest')">TEST</div>
+                    <div class="box" onclick="displayMessage('TFC');displayMeaning('TFC: Traffic')">TFC</div>
+                    <div class="box" onclick="displayMessage('TIL');displayMeaning('TIL: Until ')">TIL</div>
+                    <div class="box" onclick="displayMessage('TKS');displayMeaning('TKS: Thanks')">TKS</div>
+                    <div class="box" onclick="displayMessage('TCVR');displayMeaning('TCVR: Transceiver ')">TCVR</div>
+                    <div class="box" onclick="displayMessage('TU');displayMeaning('TU: Thank you ')">TU</div>
+                    <div class="box" onclick="displayMessage('TX');displayMeaning('TX: Transmitter')">TX</div>
+                    <div class="box" onclick="displayMessage('TNX');displayMeaning('TNX: Thanks')">TNX</div>
+                    
+                    <div class="box" onclick="displayMessage('U');displayMeaning('U: You')">U</div>
+                    <div class="box" onclick="displayMessage('UFB');displayMeaning('UFB: Ultra fine business (excellent) ')">UFB</div>
+                    <div class="box" onclick="displayMessage('UR');displayMeaning('UR: Your')">UR</div>
+                    <div class="box" onclick="displayMessage('USB');displayMeaning('USB: Upper sideband  ')">USB</div>
+
+                    <div class="box" onclick="displayMessage('VERT');displayMeaning('VERT: Vertical antenna ')">VERT</div>
+                    <div class="box" onclick="displayMessage('VA');displayMeaning('VA: End of work ')">VA</div>
+                    <div class="box" onclick="displayMessage('VY');displayMeaning('VY: Very  ')">VY</div>
+
+                    <div class="box" onclick="displayMessage('W');displayMeaning('W: Watts ')">W</div>
+                    <div class="box" onclick="displayMessage('WA');displayMeaning('WA: Word after')">WA</div>
+                    <div class="box" onclick="displayMessage('WB');displayMeaning('WB: Word before ')">WB</div>
+                    <div class="box" onclick="displayMessage('WKD');displayMeaning('WKD: Worked (connected)  ')">WKD</div>
+                    <div class="box" onclick="displayMessage('WPM');displayMeaning('WPM: Words Per Minute ')">WPM</div>
+                    <div class="box" onclick="displayMessage('WRK');displayMeaning('WRK: Work ')">WRK</div>
+                    <div class="box" onclick="displayMessage('WX');displayMeaning('WX: Weather ')">WX</div>
+
+                    <div class="box" onclick="displayMessage('XCVR');displayMeaning('XCVR: Transceiver ')">XCVR</div>
+                    <div class="box" onclick="displayMessage('XMTR');displayMeaning('XMTR: Transmitter')">XMTR</div>
+                    <div class="box" onclick="displayMessage('XTAL');displayMeaning('XTAL: Wife ')">XTAL</div>
+
+                    <div class="box" onclick="displayMessage('XYL');displayMeaning('XYL: Young Lady ')">XYL</div>
+                    <div class="box" onclick="displayMessage('YL');displayMeaning('YL: Best regards ')">YL</div>
+
+                    <div class="box" onclick="displayMessage('73');displayMeaning('73: Love and kisses ')">73</div>
+
+                    
+
+                </ul>
+              <ul>
+              
+                  
+              </ul>
+              <ul>
+            
+              </ul>
+               
+            </td>
+            
+            </tr>
+            </table>
+        </div>
+            
+            </div>
+            
+          
+            
+                <div class="errorText2" >
+              <div id="errorText"  style="color: red; "></div>
+            </div>
+            <!-- <button id="nextButton1"  name="submit" type="button" value="Submit" onclick="submitStepOne();" disabled >Submit</button> -->
+            
+            
+        <!-- </form> -->
+    </div>
+        
+    
+    
+    <div class="simsubscreen1" id="canvas2" style="visibility:hidden;">
+    <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;2&nbsp;</span>
+        <p class="steptext">&nbsp; Click on the play button to observe the Morse code equivalent to the abbreviation entered.</p> <br><br> <br> <br>
+        <div class="main2">
+        <p class="select_alpha"> Selected abbreviation : 
+            <span class="output" id="result"  ></span>
+            <span id="messageStep2"  class="messageAbr1" ></span>
+            
+            <p>
+                <div class="mainCenter">
+                <div class="">
+                <!-- <span class="out" id="result2" ></span> -->
+                <span class="outDash"></span>
+                <span id="message2Step2"  class="messageAbr2" ></span>
+            </div>
+    
+                <div class="btn-container">
+                    <span id="error"></span>
+                    <div class="btn2-container">
+                    
+                <button class="play-button" type="submit" id="playButton" onclick="playMorseSequence()"><h5>Play</h5></button>
+           
+            </div>
+            <span id="resultDiv"></span>
+            <div class="messageMean-container">
+            <span id="messageMean"  class="messageMean1" ></span>
+        </div>
+        </div>
+        <div>
+    </div>
+    </div>
+        
+            
+            </p>
+            <p class="morse-value">
+                    <span class="out1" id="morse-output" style="display: none;" ></span>
+                    
+                    <!-- <span class="out2" id="morse-output9" ></span> -->
+                    <span  id="morseOutput" class="out2" class="morse-char-initial" id="morse-output1" >
+                    <span id="out2">out2</span>
+                        
+                    </span>
+                </p>
+                <!-- <p id="morse-output" ></p> -->
+                <span class="message" style="color: black; padding-top: 2px; padding-left: 110px;">Keep audio on</span>
+                <div id="image-container"></div>
+        </p>
+        <p id="morse-a" ></p>
+        <p id="morse-b"></p>
+        <p id="morse-d"></p>
+        <!-- <p id="morse-D"></p> -->
+    
+        
+        
+        <!-- <button type="button" class="hint-btn" id="hintButton" onclick="displayHintImages()">Hint to remember</button> -->
+        
+        <!-- <button type="button" class="hint-btn" id="hintButton"  onclick="displayHintImages()">Hint to remember</button> -->
+        <div class="imageAdj">
+        <!-- <button type="button" class="hint-btn" id="hintButton" onclick="displayHintImages();hideHintButton();">Hint to remember</button> -->
+        </div>
+            
+        <span class="outputImg" ></span>
+        <div class="outputImg" style="display: none;"></div>
+    
+        <div class="outputName">
+            <!-- Name will be displayed here -->
+        </div>
+        <div>
+        <!-- <button id="resetButton" class="repeatBtn" style="display: none;" onclick="resetToStepOne(); "><img src="./restart-removebg-preview.png" alt="" class="resImg" style="height: 28px; width: 30px;"></button> -->
+        
+        <button id="resetButton" class="repeatBtn" style="display: none;"  onclick="resetToStepOne(); ">
+            <div class="mainbox-repeat">
+            <div class="square-box">
+                <span class="material-symbols-outlined">
+                    repeat
+                    </span>
+                </div>
+                <div class="repeatText"><i class="material-icons"></i>Repeat</div>
+            </button>
+        </div>
+    </div>
+    </div>
+        <div id="image-container"></div>
+    
+    </div>
+    
+    </div>
+    
+    <div id="nav">
+    <img id="nextButton" onclick="navNext()" src="images/Next.png" />
+    </div>
+    
+    
+    
+    <div id="copyright"> &copy;2023-<script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+    </div>
+
+
+    <script>
+        function showMenu() {
+            var showMenuButton = document.getElementById("showMenuButton");
+            var menuContainer = document.querySelector(".menu-container");
+             var messageElement = document.querySelector('.messageAbr');
+             messageElement.style.display = 'inline-block';
+             document.querySelector('.table-container').style.display='block';
+             document.getElementById('message').style.display='none';
+
+            if (showMenuButton) {
+                showMenuButton.style.display = "none"; // Hide the button
+            }
+            if (menuContainer) {
+                // menuContainer.classList.remove("hidden"); // Show the menus
+                menuContainer.style.display = "block"; // Show the table
+            }
+            
+        }
+
+        function displayMessage(selection) {
+            var messageElement = document.getElementById("message");
+
+            
+
+            var messageElement1 = document.getElementById("messageStep2");
+            var messageElement2 = document.getElementById("message2Step2");
+            
+            
+            messageElement.style.backgroundColor = "#f0f0f0";
+            messageElement.style.padding = "5px";
+            messageElement.style.border = "2px solid #333";
+            messageElement.style.borderRadius = "5px";
+            messageElement.style.width='50px'
+            messageElement.style.height='40px'
+            messageElement.style.display = 'flex'; // Use flexbox for centering
+            messageElement.style.alignItems = 'center'; // Center vertically
+            messageElement.style.justifyContent = 'center'; // Center horizontally
+            messageElement.style.marginLeft='220px'
+            messageElement.style.marginTop='-30px'
+           
+            
+
+            messageElement2.style.backgroundColor = "#f0f0f0";
+            messageElement2.style.padding = "5px";
+            messageElement2.style.border = "2px solid #333";
+            messageElement2.style.borderRadius = "5px";
+            messageElement2.style.width='50px'
+            messageElement2.style.height='40px'
+            messageElement2.style.display = 'flex'; // Use flexbox for centering
+            messageElement2.style.alignItems = 'center'; // Center vertically
+            messageElement2.style.justifyContent = 'center'; // Center horizontally
+            messageElement2.style.marginLeft='-30px'
+            
+
+            var alphabetInput = document.getElementById("alphabetInput");
+            alphabetInput.style.display='none'
+            messageElement.textContent = selection;
+            messageElement1.textContent=selection;
+            
+            messageElement2.textContent=selection;
+            var button1 =document.getElementById("buttonAbr")
+            button1.style.display='block'
+          
+            alphabetInput.value = selection;
+            
+        }
+
+
+        function displayMeaning(selection2){
+            var meassageMeaning= document.getElementById("messageMean");
+            
+
+            var alphabetInput = document.getElementById("alphabetInput");
+            alphabetInput.style.display='none'
+            meassageMeaning.textContent=selection2;
+            
+
+        }
+    </script>
+    </body> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </html>
+    
 </html>

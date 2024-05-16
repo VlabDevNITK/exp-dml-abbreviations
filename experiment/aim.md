@@ -1,1 +1,4 @@
-To acquire the ability to receive and understand Morse code transmissions of numbers.
+To expedite communication by using shorter representations for common words, alphabet, numbers, and providing context, thereby enhancing the efficiency of Morse code transmissions.
+
+
+
