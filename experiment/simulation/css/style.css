@@ -1,298 +1,607 @@
-  /*mathstyle.css*/  
-span.frac {
-display: inline-block;
-text-align: center;
-vertical-align: middle;
+    /*mathstyle.css*/  
+    span.frac {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        }
+        span.frac > sup, span.frac > sub {
+        display: block;
+        font: inherit;
+        padding: 0 0.3em;
+        }
+        span.frac > sup {border-bottom: 0.08em solid;}
+        span.frac > span {display: none;}
+            
+            
+        #simscreen
+        {
+            position: relative;
+            left:0px;
+            top:0px;
+            height: 600px; 
+            width:800px;
+            border:solid 1px;
+        }
+        
+        #title{
+            position:relative;
+            left: 0px;
+            top: 0px;
+            height:40px;
+            font-size: 24px;
+            text-align:center;
+            background-color: black;
+            font-family: verdana;
+            color: White;
+            text-transform: uppercase; 
+        }
+        
+        #title h3
+        {
+            padding-top:2px;
+            margin:0px;
+        }	
+        
+        .simsubscreen
+        {
+            position:absolute;
+            left:50px;
+            top:50px;
+            height:530px;
+            width:745px;
+        }
+        
+        .incanvas
+        {
+            margin:5px 0 0 5px;
+            padding:0;
+        }
+        
+        #nextButton
+        {
+            position:absolute;
+            left:750px;
+            top:530px;
+            cursor:pointer;
+        }
+        
+        .circlebg
+        {
+            border-radius:100%;
+            font-size:25px;
+            color:#fff;
+            text-align:center;
+            background:#000
+        }
+        
+        .steptext
+        {
+            display:inline;
+            font-size:14px;
+        }
+        
+        #copyright{
+            position: absolute;
+            left:50px;
+            top: 580px;
+            font-size:12px
+        }
+        
+        /* css */
+        .submit-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px;
+            margin-left: 230px;
+        }
+        
+        .para{
+            width: 705px;
+        }
+        
+        #nextButton1
+        {
+            position:absolute;
+            left:320px;
+            top:400px;
+            cursor:pointer;
+        }
+
+        
+        
+        
+        /* comments */
+        .simsubscreen1
+        {
+            position:absolute;
+            left:50px;
+            top:50px;
+            height:530px;
+            width:745px;
+        }
+        
+        /* .output{
+            border-radius:20%;
+            font-size:25px;
+            color:rgb(0,0,0);
+            text-align:center;
+            background: #efefef;
+            border-style: groove;
+            border-color: black;
+            padding: 3px;
+            padding-left: 5px;
+            padding-right: 5px;
+            
+        } */
+        
+        .out{
+            border-radius:20%;
+            font-size:16px;
+            font-weight: 500;
+            color:#000000;
+            /* text-align:center; */
+            background: #efefef;
+            border-style: groove;
+            border: 2.5px solid black;
+            /* padding: 8px;
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-left: 90px; */
+            width: 64px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 80px; */
+            margin-right: 170px;
+            margin-bottom: -10px;
+            position: relative;
+            right: 60px;
+        }
+
+        .btn-container{
+            position: relative;
+            right: 70px;
+            
+        }
+        
+        .select_alpha{
+            text-align: center;
+            margin-right: 100px;
+            margin-bottom: 45px;
+            margin-top: -20px;
+            font-size:14px
+            
+        }
+        
+        .play-button {
+            height: 50px;
+            width: 57px;
+            /* background-color: rgba(0, 0, 0, 0.7); */
+            /* background-color: #efefef; */
+            border-radius: 50%;
+            position: relative;
+            padding: 9px;
+            bottom: 60px;
+            left: 225px;
+            border: 1.5px solid black;
+            margin-top: 20px;
+            
+            
+        }
+        
+        
+        .play-button:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            margin: 0 auto;
+            border-style: solid;
+            border-width: 9.5px 0 9.5px 17px;
+            border-color: transparent transparent transparent #000;
+        }
+        
+        
+        .out1{
+            
+            font-size:40px;
+            color:#000000;
+            text-align:center;
+            
+        }
+        
+        
+        /* button:hover {
+        opacity: 0.7;
+        } */
+        
+        .hidden {
+            display: none;
+        }
+        
+        .play{
+            bottom: 15px;
+            padding-bottom: 100px;
+        }
+        
+        #btn2-text{
+            margin: -25px 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: red;
+            margin-left: 100px;
+            
+        }
+        
+        .morse-value{
+            top: 200px;
+            margin-left: 310px;
+            margin-top: -135px;
+        }
+        
+        
+        .out2{
+            font-size:45px;
+            color:#000000;
+            text-align:center;
+            font-weight: 600;
+            /* vertical-align: middle;
+            padding: 1px;
+            justify-content: space-evenly; */
+            /* font-family: monospace;  */
+            /* Use a monospace font for consistent spacing */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* font-family: monospace; */
+            letter-spacing: 0.1em;
+    /*         
+            width: 100px; */
+            margin-left: 75px;
+            position: relative;
+            top: -10px;
+            
+            
+        }
+
+        
+        .message{
+            margin-left: 160px;
+            margin-top: 20px;
+            display: flex;
+            text-align: center;
+            font-size: 12px;
+            
+            
+        }
+        
+        
+        .dot {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            margin: 5px;
+            opacity: 0;
+        }
+        
+        .dash {
+            width: 60px;
+            height: 20px;
+            background-color: black;
+            margin: 5px;
+            opacity: 0;
+        }
+        
+        .hint-btn{
+            padding: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 15px;
+            margin: 15px;
+            margin-left: 265px;
+            cursor: pointer;
+            opacity: 0.7s;
+            margin-top: 30px;
+            
+            
+        }
+        
+        #image{
+            height: 100px;
+            width: 100px;
+            bottom: 300px;
+        }
+        
+        
+        
+        .alphasel{
+            left: 30px;
+            padding-left: 160px;
+            font-size:14px
+            
+        }
+        
+        .place{
+            width: 60px;
+        }
+        
+        .errorText2{
+            margin-left: -41px;
+        }
+        
+        #hintButton{
+            margin-bottom: 27px;
+            bottom: 10px;
+        }
+        
+        .outputName{
+            font-size:18px;
+            color:#000000;
+            text-align:center;
+            font-weight: 600;
+            margin-left:80px;
+            margin-top: 20px;
+        
+        }
+        
+        #btn2{
+            padding: -25px;
+            margin-top: 20px;
+        }
+        
+        .mainCenter{
+            margin-left: 120px;
+            margin-top: 30px;
+            padding: 8px;
+            
+        }
+        
+        #resetButton{
+            position: absolute;
+            left: 40%; /* Adjust the right distance as needed */
+            top: 480px;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 30px;
+            height: 20px;
+        
+            
+        }
+        
+        .resImg {
+            position: relative; /* Change to relative positioning */
+            display: block; /* Add this to center the image */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+        
+        
+        h5{
+            
+            padding: 3px;
+        }
+        
+        #morseOutput{
+            /* margin-left: 6px; */
+            position: relative;
+            top: -30px;
+            font-size: 45px;
+            
+            
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: black;
+            right: 22px;
+        
+            /* background-color: red; */
+        
+        }
+
+        #morseOutput{
+            letter-spacing: 5px;
+        
+        }
+
+        .output{
+            margin-right: 190px;
+            
+        }
+        
+        
+        
+        
+        
+        
+        .morse-char-initial {
+            font-size: 20px; /* Set the initial font size to 20px */
+            font-weight: bold;
+            /* Other initial styling */
+            margin-right: 0.2em; /* Add some spacing between characters */
+        }
+        
+        .morse-dot {
+            font-size: 15px; /* Adjust the dot size as needed */
+        }
+        
+        .morse-dash {
+            font-size: 15px; /* Adjust the dash size as needed */
+            font-weight: normal; /* Reset font weight to normal */
+        }
+        
+        
+        .size{
+            cursor: pointer;
+            /* background: #efefef; */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .mainbox-repeat{
+            position: relative;
+            top: -18px;
+        }
+
+        
+        .square-box {
+            width: 50px; /* Adjust the width of the square box */
+            height: 50px; /* Adjust the height of the square box */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2.5px solid black; /* Add a border to the square box */
+            background: #efefef;
+            border-radius: 10px;
+            margin-top: -25px;
+            margin-left: -18px;
+            padding: 3px;
+            padding-bottom: 5px;
+            border-radius: 50%;
+        }
+        
+        .repeatText{
+            color: black;
+            font-size: 8px;
+            font-weight: 600;
+            margin-top: -20px;
+            margin-left: -1px;
+            padding-top: 1px;
+        }
+        /* .material-icons{
+            display: none;
+        } */
+        
+        #alphabetInput{
+            width: 80px;
+        }
+
+    #resultDiv{
+        position: relative;
+        top: 120px;
+        left: 60px;
+    }
+
+       /* CSS for layout */
+       .menu-container {
+        display: flex;
+    }
+    .left-menu, .right-menu {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li {
+        margin: 5px;
+    }
+
+    /* Remove list-style from ul elements within .left-menu and .right-menu */
+.left-menu ul, .right-menu ul {
+    list-style: none;
 }
-span.frac > sup, span.frac > sub {
-display: block;
-font: inherit;
-padding: 0 0.3em;
+
+/* Style the list items as links */
+.left-menu ul li, .right-menu ul li {
+    margin-bottom: 10px; /* Add some spacing between items */
 }
-span.frac > sup {border-bottom: 0.08em solid;}
-span.frac > span {display: none;}
+
+/* Style the links */
+.left-menu ul li a, .right-menu ul li a {
+    text-decoration: none; /* Remove underlines */
+    color: #000; /* Set the text color to black or your preferred color */
+}
+
+.upside-down-scroll-box {
+    overflow-y: auto;
+    max-height: 200px;
+    transform: rotate(180deg); /* Rotate the box 180 degrees to make it upside down */
+}
+
+.upside-down-scroll-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transform: rotate(180deg); /* Rotate the content back to its normal orientation */
+}
+
+
+#buttonAbr{
+    margin-left: 220px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+#canvas2{
+    float: left;
+    margin-left: -54px;
+   top: 2px;
+}
+
+.table-container {
+    width: 450px;
+    border: 1px solid grey;
+    margin: 10px;
+    max-height: 300px; /* Set the desired fixed height */
+    overflow-y: auto; /* Add a vertical scrollbar if content overflows */
+    overflow-x: hidden;
+}
+
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.box {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #111; /* Slightly bolder black color */
+    font-weight: bold; /* Make the font bold */
     
-	
-#simscreen
-{
-	position: relative;
-	left:0px;
-	top:0px;
-	height: 600px; 
-	width:800px;
-	border:solid 1px;
 }
 
-#title{
-	position:relative;
-	left: 0px;
-	top: 0px;
-	height:40px;
-	font-size: 24px;
-	text-align:center;
-	background-color: black;
-	font-family: verdana;
-	color: White;
-	text-transform: uppercase; 
+.box:hover {
+    background-color: lightgray;
+  }
+  
+
+#messageStep2{
+   position: relative;
+   right: 190px;
 }
 
-#title h3
-{
-	padding-top:2px;
-	margin:0px;
-}	
-
-.simsubscreen
-{
-	position:absolute;
-	left:50px;
-	top:50px;
-	height:530px;
-	width:745px;
+#message2Step2{
+   position: relative;
+   top: 10px;
+   left: 80px;
 }
 
-.incanvas
-{
-	margin:5px 0 0 5px;
-	padding:0;
+#messageMean{
+    position: relative;
+   top: 110px;
+   left: 50px;
 }
 
-#nextButton
-{
-	position:absolute;
-	left:750px;
-	top:530px;
-	cursor:pointer;
-}
-
-.circlebg
-{
-	border-radius:100%;
-	font-size:25px;
-	color:#fff;
-	text-align:center;
-	background:#000
-}
-
-.steptext
-{
-	display:inline;
-	font-size:14px;
-}
-
-#copyright{
-	position: absolute;
-	left:50px;
-	top: 580px;
-	font-size:12px
-}
-select{
-	width:150px;
-	/* font-weight: bold; */
-	position:absolute;
-	left:310px;
-	top: 96px;
-	scroll-padding-left: 2%;
-	/* padding-bottom: 2%; */
-	scroll-padding-top: 2%;
-	font-weight: 600;
-	font-size: 15px;
-	cursor: pointer;
-	padding: 5px;
-	padding-top: 7px;
-	padding-bottom: 7px;
-}
-.button{
-	
-	position: absolute;
-	left:245px;
-	top: 190px;
-	border: #000 1px solid;
-	cursor: pointer;
-}
-.button:disabled{
-	color: inherit;
-	opacity: 1;
-	border: #000 1px solid;
-
-}
-label{
-	position: absolute;
-	left:170px;
-	top: 103px;
-	font-size:15px
-}
-.plybtn{
-	position: absolute;
-	left:300px;
-	top: 150px;
-	width:70px;
-	height:65px;
-	border-radius:100%;
-	border-color: #000;
-	color: #000;
-	padding-top:30px;
-	background-color: rgb(219, 221, 221);
-	cursor: pointer;
-	font-weight: 600;
-
-}
-.plybtn::before{
-	position: absolute;
-	content: '';
-	border-top: transparent 10px solid;
-	border-bottom: transparent 10px solid;
-	border-left: #000 15px solid;
-	top:45%;
-	left:50%;
-	transform: translate(-40%,-50%);
-	cursor: pointer;
-
-}
-.plybtn:disabled{
-	position: absolute;
-	left:300px;
-	top: 150px;
-	width:70px;
-	height:65px;
-	border-radius:100%;
-	border-color: #000;
-	color: #000;
-	padding-top:30px;
-	font-weight: 600;
-}
-p.ad{
-	position: absolute;
-	left:275px;
-	top: 230px;
-	font-size: 14px;
-}
-p.morse{
-	position: absolute;
-	left:388px;
-	top: 69px;
-	/* font-weight: 600; */
-	/* font-size: 20px; */
-	padding: 3px;
-	padding-left: 7px;
-	padding-right: 7px;
-	
-	
-	
-}
-p.selectmorse{
-	position: absolute;
-	left:243px;
-	top: 70px;
-}
-p.dm{
-	position: absolute;
-	left: 100px;
-	top: 135px;
-    width: 60px;
-	height:40px;
-	border-style: solid;
-	border-width: medium;
-	border-radius: 10px;
-	text-align: center;
-    text-decoration: solid;
-	font-style: bold;
-	border: 2px solid black;
-	font-size: larger;
-	padding-top: 2%;
-	padding-bottom: -2%;
-	padding-left: -2%;
-   padding-right: -2%;
-   
-   font-weight: 600;
-	font-size: 20px;
-
-}
-
-
-.morsedisplay1{
-	position: absolute;
-	left: 490px;
-	top: 135px;
-   
-	font-weight: 700;
-	font-size: 58px;
-	font-family: monospace;
-}
-.button{
-	display: block; 
-	margin-left: 55px;
-	margin-top: 170px;
-}
-.repeat1{
-	position: absolute;
-	top:410px;
-	left:300px;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background-color:rgb(224, 223, 223);
-	color:rgb(32, 32, 32);
-	margin-left: -5px;
-	padding: 8px 8px;
-	font-size:10px;
-	
-	
-}
-.warning{
-	position: absolute;
-	left:150px;
-	top: 280px;
-	font-size:14px
-}
-.pd{
-	/* margin: 40px; */
-	padding-right: 35px;
-}
-.pd1{
-	/* margin: 40px; */
-	padding-right: 35px;
-}
-
-.opDoubledash{
-	font-weight: 600;
-	font-size: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.repeatname{
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-size: small;
-}
-#numberInput{
-	position: absolute;
-	left: 24rem;
-	top: 11.25em;
-}
-#slider{
-	width: 39%;
-	position: absolute;
-	left: 185px;
-	top:15rem
-}
-.selectNumber{
-	position: absolute;
-	top: 150px;
-	left: 235px;
-}
-#morseImage{
-	position: absolute;
-	top: 255px;
-	height: 150px;
-	left: 490px;
-}
-#hintButton{
-	position: absolute;
-	padding: 10px 10px;
-	top: 320px;
-	left: 257px;
-	border-radius: 8px;
-	font-weight: 600;
-	font-family:  sans-serif;
-}
+.messageMean-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 190px;
+  }
+  
