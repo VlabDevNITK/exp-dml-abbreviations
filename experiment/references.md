@@ -1,15 +1,28 @@
-<!-- Add resources referred for content and simulation development and further reading materials.
-Mention about only the important references -->
-
-
 ### References
-Hossell, K. P. (2003). Morse code (1st ed., pp. 8, 10, 39). Heinemann/Raintree (1 March 2003).
 
-Morse code translator. Morse Code Translator | Morse Code World. (n.d.).  [Morse code translator](https://morsecode.world/international/translator.html)
-
-
-Amateur Station Operator’s Certificate Examination, - niar.org. (n.d.). [Amateur Station Operator’s Certificate Examination](https://niar.org/downloads/Study-Manual-General-Grade-22.pdf)
-[Study Manual Restricted Grade 22](https://www.niar.org/downloads/Study-Manual-Restricted-Grade-22.pdf)
-
-
-
+<table style="text-align:justify;">
+<tr style="background-color: white">
+<th>References</th>
+<th>Contributors list</th>
+</tr>
+<tr style="background-color: white">
+<td>
+<ol style="width: 500px">
+<li>Hossell, K. P. (2003). Morse code (1st ed., pp. 8, 10, 39). Heinemann/Raintree (1 March 2003).</li></br>
+<li>Morse code translator. Morse Code Translator | Morse Code World. (n.d.). <a href="https://morsecode.world/international/translator.html">Morse code translator</a></li></br>
+<li>Amateur Station Operator’s Certificate Examination - niar.org. (n.d). <a href="https://niar.org/downloads/Study-Manual-General-Grade-22.pdf">Amateur Station Operator’s Certificate Examination</a></li></br>
+<li><a href="https://www.niar.org/downloads/Study-Manual-Restricted-Grade-22.pdf">Study Manual Restricted Grade 22</a></li>
+</ol>
+</td> 
+<td>Developer : Dr. Pruthviraj U | NITK</br></br>
+Contributors :
+<ul style="list-style-type: none;">
+<li>Pavithra </li>
+<li>Kumar Aditya Singh </li>
+<li>Vaishnavi Singh </li>
+<li>Prajwal Kumar | NITK</li>
+<li>Shraddha Shetty | NITK</li>
+<li>Anusha B Salian | NITK</li>
+</ul></td>
+</tr>
+</table>
