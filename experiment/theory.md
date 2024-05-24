@@ -1,5 +1,3 @@
-### INTRODUCTION
-
 <p style="text-align:justify;">The Importance of Morse Code Abbreviations emerged from the constraints of early telegraph systems. These systems were often slow, and communication was billed per word, incentivizing users to condense their messages. As a result, telegraph operators developed a wide array of abbreviations to express familiar words, phrases, or commands with fewer characters. This innovation helped minimize costs and expedite the transmission process. These morse code abbreviations have the fundamental elements as primary signal components.</p>
 
 #### Primary signal components:
