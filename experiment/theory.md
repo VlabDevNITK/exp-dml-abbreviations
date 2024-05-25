@@ -24,117 +24,116 @@
 
 9. Preserving Morse Code as a Communication Method: <p style="text-align:justify;"> Enthusiasts and amateur radio operators continue to use Morse code as a means of preserving this historical form of communication. The use of Morse code abbreviations ensures the language remains alive and relevant.</p>
 
-
-
-| Abbreviation | Morse Code                        |
-|--------------|----------------------------------|
-| AA           | ".- .- "                         |
-| AGN          | ".- --. -"                       |
-| ANS          | ".- -. ..."                      |
-| ANT          | ".- -. -"                        |
-| AR           | ".- .-."                         |
-| AS           | ".- ..."                         |
-| B4           | "-... ....-"                     |
-| BC           | "-... -.-."                      |
-| BD           | "-... -.."                       |
-| BK           | "-... -.-"                       |
-| BN           | "-... -."                        |
-| BTW          | "-... - .--"                     |
-| BURO         | "-... ..- .-. ---"              |
-| C            | "-.-."                           |
-| CBA          | "-.-. -... ."                   |
-| CFM          | "-.-. ..-. --"                  |
-| CL           | "-.-. .-.."                      |
-| CLG          | "-.-. .-.. --."                 |
-| CLR          | "-.-. .-.. .-."                 |
-| CONDX        | "-.-. --- -. -.. -.. -.. -... -.. --.." |
-| CPI          | "-.-. .--. .. "                 |
-| CPY          | "-.-. .--. -.--"               |
-| CQ           | "-.-. --."                      |
-| CW           | "-.-. .--"                      |
-| DE           | "-.. ."                         |
-| DR           | "-.. .-."                       |
-| DWN          | "-.. -.-- -.."                |
-| DX           | “-.. -.. -..”                 |
-| ES           | “. ...”                        |
-| FB           | “..-. -...”                    |
-| FER          | “..-. .-.”                     |
-| GUD          | “--. ..- -..”                |
-| GA           | “--. .-”                      |
-| GB           | “--. -..”                     |
-| GD           | “--. -..”                     |
-| GE           | “--. .”                       |
-| GM           | “--. --”                      |
-| GN           | “--. -.”                      |
-| GND          | “--. -. -..”                |
-| GP           | “--. .--.”                   |
-| GUD          | “--. ..- -..”                |
-| HI           | “.... ..”                   |
-| HR           | “.... .-.”                  |
-| HV           | “.... ...”                  |
-| HW?          | “.... .-- -.. -.--”         |
-| K            | “-.-”                        |
-| KN           | “-.- -.”                     |
-| LID          | “.-.. .. -..“                |
-| LP           | “.-.. .--.”                  |
-| LSB          | “.-.. ... -...”              |
-| LW           | “.-.. .--”                   |
-| MGR          | “-- --. .-.”                |
-| MNI          | “-- -. .. ”                |
-| MSG          | “-- ... --.”               |
-| NIL          | “-. .. .-..”               |
-| NR           | “-. .-.”                   |
-| NW           | “-. .--”                   |
-| OM           | “--- --”                  |
-| OP           | “--- .--.”                 |
-| OPR          | “--- .--. .-. ”           |
-| PSE          | “.-- ... .”              |
-| PO           | “.-- ---”                |
-| PWR          | “.-- .-- .-.”           |
-| R            | “.-.”                    |
-| RCV          | “.-. -.-. ...”          |
-| RCVD         | “.-. -.-. ... -..”      |
-| RIG          | “.-. .. --.”            |
-| RPRT         | “.-. .--. .-. -”        |
-| RX           | “.-. -.. -..”           |
-| SIG          | “.-. -- ”               |
-| SK           | “... -.-”               |
-| SN           | “... -.”                |
-| SNW          | “... -. .--”            |
-| W            | “.-- ”                  |
-| SP           | “... .--.”              |
-| SRI          | “... .-. ..”           |
-| STN          | “... - -.”             |
-| SWL          | “... .-- .-..”         |
-| TEMP         | “- . -- .”             |
-| TEST         | “- . ... -”           |
-| TFC          | “- ..-. -.-.”         |
-| TIL          | “- .. .-..”           |
-| TKS          | “- -.- ...”           |
-| TCVR         | “- -.- ... .-.”       |
-| TNX          | “- -. -.. -..”        |
-| TU           | “- ..-”                |
-| TX           | “- -..-”              |
-| TNX          | “- -. -.. -..”        |
-| U            | “..-”                  |
-| UFB          | “..- ..-. -...”       |
-| UR           | “..- .-.”              |
-| USB          | “..- ... -...”        |
-| VA           | “...- .-”              |
-| VERT         | “...- . .-. -”         |
-| WA           | “.-- .-”               |
-| WB           | “.-- -...”             |
-| WKD          | “ .-- -.- -..”        |
-| WPM          | “.-- .-- .--”         |
-| WRK          | “.-- .-. -.-”         |
-| WX           | “.-- -..-”            |
-| XCVR         | “-..- -.- ... .-.”   |
-| XMTR         | “-..- -- -”           |
-| XTAL         | “-..- - - .-..”       |
-| XYL          | “-..- -.-- .-..”     |
-| YL           | “-.-- .-..”           |
-| 73           | “--... -...”          |
-| 88           | “---.. ---..”         |
+ 
+| Abbreviation | Full Form or Details                      |
+|--------------|-------------------------------------------|
+| AA           | All After                                 |
+| AGN          | Again                                     |
+| ANS          | Answer                                    |
+| ANT          | Antenna                                   |
+| AR           | End of Message                            |
+| AS           | Waiting period                            |
+| B4           | Before                                    |
+| BC           | Broadcast                                 |
+| BD           | Bad                                       |
+| BK           | Back or break                             |
+| BN           | Been, being                               |
+| BTW          | By The Way                                |
+| BURO         | QSL bureau                                |
+| C            | Correct, yes                              |
+| CBA          | Callbook Address                          |
+| CFM          | Confirm                                   |
+| CL           | Closing station down                      |
+| CLG          | Calling                                   |
+| CLR          | Clear                                     |
+| CONDX        | Conditions                                |
+| CPI          | Copy                                      |
+| CPY          | Copy                                      |
+| CQ           | General call for a QSO (contact)          |
+| CW           | Continuous waves (Morse code)             |
+| DE           | From                                      |
+| DR           | Dear                                      |
+| DWN          | Down                                      |
+| DX           | Distance (Long Distance Communication)    |
+| ES           | And                                       |
+| FB           | Fine business, very good                  |
+| FER          | For                                       |
+| GUD          | Good                                      |
+| GA           | Good afternoon or go ahead                |
+| GB           | Good Bye                                  |
+| GD           | Good or Good day                          |
+| GE           | Good Evening                              |
+| GM           | Good Morning                              |
+| GN           | Good Night                                |
+| GND          | Ground                                    |
+| GP           | Ground-plane antenna                      |
+| GUD          | Good                                      |
+| HI           | Laughter on CW                            |
+| HR           | Here or ham radio                         |
+| HV           | Have                                      |
+| HW?          | How do you copy me? What about you?       |
+| K            | Please transmit                           |
+| KN           | Only the station I am working should transmit |
+| LID          | Poor Operator                             |
+| LP           | Log-periodic antenna or long path         |
+| LSB          | Lower Sideband                            |
+| LW           | Long-wire antenna                         |
+| MGR          | QSL manager                               |
+| MNI          | Many                                      |
+| MSG          | Message                                   |
+| NIL          | Nothing heard or no copy                  |
+| NR           | Near                                      |
+| NW           | Now or North-West                         |
+| OM           | Old man (amateur radio operator)          |
+| OP           | Operator name                             |
+| OPR          | Operator, operate                         |
+| PSE          | Please                                    |
+| PO           | Power output                              |
+| PWR          | Power                                     |
+| R            | Message received or correct               |
+| RCV          | Receive                                   |
+| RCVD         | Received                                  |
+| RIG          | Equipment                                 |
+| RPRT         | Report                                    |
+| RX           | Receiver                                  |
+| SIG          | Signal                                    |
+| SK           | This is my last transmission (stopkeying) |
+| SN           | Soon                                      |
+| SNW          | Snow                                      |
+| SP           | Short path                                |
+| SRI          | Sorry                                     |
+| STN          | Station                                   |
+| SWL          | Short Wave Listener                       |
+| TEMP         | Temperature                               |
+| TEST         | Test                                      |
+| TFC          | Traffic                                   |
+| TIL          | Until                                     |
+| TKS          | Thanks                                    |
+| TCVR         | Transceiver                               |
+| TU           | Thank You                                 |
+| TX           | Transmitter                               |
+| TNX          | Thanks                                    |
+| U            | You                                       |
+| UFB          | Ultra fine business (excellent)           |
+| UR           | Your                                      |
+| USB          | Upper Sideband                            |
+| VERT         | Vertical antenna                          |
+| VA           | End of work                               |
+| VY           | Very                                      |
+| W           | Watts                                      |
+| WA           | Word After                                |
+| WB           | Word Before                               |
+| WKD          | Worked (connected)                        |
+| WPM          | Words Per Minute                          |
+| WRK          | Work                                      |
+| WX           | Weather                                   |
+| XCVR         | Transceiver                               |
+| XMTR         | Transmitter                               |
+| XTAL         | Crystal                                   |
+| XYL          | Wife                                      |
+| YL           | Young Lady                                |
+| 73           | Best Regards                              |
+| 88           | Love and Kisses                           |
 
 <p style="text-align:justify;">In summary, Morse code abbreviations are indispensable tools for Morse code users across various fields. They enable efficient, rapid, and cost-effective communication, ensuring that this time-honored method endures as a unique and valuable communication system.</p>
 
