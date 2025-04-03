@@ -1,0 +1,273 @@
+@media screen and (min-width: 300px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  h1 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  #copyright {
+    margin: 0px 20px;
+  }
+
+  .numberInput {
+    width: 15%;
+  }
+
+  #morseOutput {
+    grid-column: 1;
+    font-size: 35px;
+  }
+
+  /* #obj {
+    margin-top: 25px;
+ } */
+ 
+ .incanvas {
+     
+     line-height: 1.6;
+ }
+
+  .morsePlay {
+    grid-template-columns: 1fr;
+  }
+
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    overflow: auto;
+    /* Enable scrolling */
+    max-height: 300px;
+    /* Adjust height as needed */
+  }
+
+  .main-canvas{
+    height: 100%;
+    width: auto;
+  }
+  #backButton {
+    margin-top: 5px;
+  
+  
+  }
+  .div1{
+    position: relative;
+      top: -40px;
+      margin: -2rem;
+    
+  }
+  #meanDiv {
+    position: relative;
+    top: 0px;
+  }
+    .text2 {
+    top: 5px;
+}
+
+}
+
+@media screen and (min-width: 500px) {
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  /* .main-canvas{
+      transform: scale(0.7);
+    } */
+  .morsePlay {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  #morseOutput {
+    grid-column: 1;
+    font-size: 45px;
+  }
+
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    overflow: auto;
+    /* Enable scrolling */
+    max-height: 300px;
+    /* Adjust height as needed */
+  }
+  .main-canvas{
+    height: 100%;
+    width: auto;
+  }
+  #backButton {
+    margin-top: 10px;
+  
+  
+  }
+  .div1{
+    position: relative;
+      top: -40px;
+      margin: -2rem;
+    
+  }
+  #meanDiv {
+    position: relative;
+    top: 0px;
+  }
+  .text2 {
+    top: 5px;
+}
+
+
+}
+
+
+@media screen and (min-width: 720px) {
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .content {
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  /* .main-canvas{
+      transform: scale(1);
+    } */
+  .morsePlay {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #morseOutput {
+    grid-column: 1;
+    font-size: 35px;
+  }
+
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    overflow: auto;
+    /* Enable scrolling */
+    max-height: 300px;
+    /* Adjust height as needed */
+  }
+  h1 {
+    font-size: 2em;
+  }
+  #backDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  #backButton {
+    display: none;
+    padding: 4px 10px;
+    background-color: #fff;
+    border: ipx solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    /* margin: 10px; */
+    font-size: 14px;
+    margin-top: 95px;
+  
+  
+  }
+  .div1{
+    position: relative;
+      top: -50px
+  }
+  #meanDiv {
+    position: relative;
+    top: 30px;
+  }
+  .text2 {
+    top: 30px;
+}
+
+}
+
+
+@media screen and (min-width: 960px) {
+
+  body {
+    font-size: 1.25em;
+    /* background-color: rgb(13, 118, 255); */
+  }
+
+  .content {
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .numberInput {
+    width: 8%;
+  }
+
+  #morseOutput {
+    grid-column: 1;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 2px;
+    color: black;
+    font-family: Arial, sans-serif;
+    
+  }
+  h1 {
+    font-size: 1.9em;
+    text-align: center;
+  }
+
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    overflow: auto;
+    /* Enable scrolling */
+    max-height: 300px;
+    /* Adjust height as needed */
+  }
+
+  .div1{
+    position: relative;
+      top: -20px
+  }
+  #meanDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+  }
+  .text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+  /* .main-canvas{
+      transform: scale(1);
+    } */
+}
