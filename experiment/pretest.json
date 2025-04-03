@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Why did the importance of Morse code abbreviations emerge in early telegraph systems??",
+      "question": "Why did the importance of Morse code abbreviations emerge in early telegraph systems?",
       "answers": {
         "a": "To make messages more complex",
         "b": "To slow down communication",
@@ -20,54 +20,54 @@
       "difficulty": "Beginner"
     },
     {
-      "question": "What was the primary reason for developing Morse code abbreviations?",
+      "question": "How did early telegraph billing practices impact the use of Morse code abbreviations?",
       "answers": {
-        "a": " To confuse telegraph operators",
-        "b": "To make messages longer",
-        "c": "To reduce communication costs",
-        "d": "To increase the transmission time"
+        "a": " They promoted the use of longer messages",
+        "b": "They incentivized the use of shorter messages",
+        "c": "They had no impact on message length",
+        "d": "They encouraged the use of complex abbreviations"
       },
       "explanations": {
-        "a": "Incorrect. The development of Morse code abbreviations aimed to simplify communication, not confuse telegraph operators.",
-        "b": "The goal was to make messages shorter, not longer.",
-        "c": "Morse code abbreviations were developed to reduce communication costs. Users condensed their messages to minimize charges and facilitate quicker transmission.",
-        "d": "The aim was to expedite transmission, not increase the transmission time."
+        "a": "Incorrect. Early telegraph billing practices did not promote longer messages; instead, they incentivized shorter messages to reduce costs.",
+        "b": "Correct. Early telegraph billing practices charged users by the word, which encouraged the use of shorter messages to save on costs, leading to the development and use of Morse code abbreviations.",
+        "c": "Incorrect. Early telegraph billing practices did impact message length by encouraging shorter messages, which led to the use of Morse code abbreviations.",
+        "d": "Incorrect. The use of Morse code abbreviations was intended to simplify communication, not to create more complex abbreviations."
       },
      
-      "correctAnswer": "c",
-      "difficulty": "Beginner"
-    },
-    {
-      "question": "How did the billing structure of early telegraph systems influence the use of Morse code abbreviations?",
-      "answers": {
-        "a": "It encouraged users to use longer messages",
-        "b": "It incentivized users to condense their messages",
-        "c": "It didn't have any impact on message length",
-        "d": "It led to the use of more complex words."
-      },
-      "explanations": {
-        "a": "The billing structure encouraged shorter messages, not longer ones.",
-        "b": "The billing structure of early telegraph systems incentivized users to condense their messages in order to save costs. This encouraged the use of Morse code abbreviations.",
-        "c": "The billing structure did have an impact by encouraging shorter messages",
-        "d": "It didn't lead to the use of more complex words but rather the development of abbreviations for common words and phrases."
-      },
-    
       "correctAnswer": "b",
       "difficulty": "Beginner"
     },
     {
-      "question": "What was the main goal of Morse code abbreviations in telegraph communication?",
+      "question": "How did Morse code abbreviations affect the efficiency of telegraph operators?",
       "answers": {
-        "a": "To make messages easier to understand",
-        "b": "To increase the number of characters in messages",
-        "c": "To expedite the transmission process and reduce costs",
-        "d": "To introduce additional complexity to messages"
+        "a": "They made the job more complicated.",
+        "b": "They decreased the speed of transmission.",
+        "c": "They streamlined message handling and reduced workload.",
+        "d": "They increased the amount of training required."
       },
       "explanations": {
-        "a": "While making messages efficient, the primary goal was not about making them easier to understand.",
-        "b": "The goal was to reduce the number of characters in messages.",
-        "c": "The main goal of Morse code abbreviations in telegraph communication was to expedite the transmission process and reduce costs, not to complicate messages.",
-        "d": "Morse code varies by region, but International Morse code is the most widely used"
+        "a": "Incorrect. Morse code abbreviations were designed to simplify communication, not complicate it. They helped streamline the process for operators.",
+        "b": "Incorrect. Morse code abbreviations actually increased the speed of transmission by reducing the length of messages.",
+        "c": "Correct. Morse code abbreviations made message handling more efficient by shortening messages, thus reducing the workload and improving overall efficiency for telegraph operators.",
+        "d": "Incorrect. Morse code abbreviations were not intended to increase training requirements. They were designed to be simple and effective, making the training process more straightforward."
+      },
+    
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which type of messages benefited most from Morse code abbreviations?",
+      "answers": {
+        "a": "Detailed scientific reports.",
+        "b": "Lengthy narratives.",
+        "c": "Short, routine communications",
+        "d": "Personal letters"
+      },
+      "explanations": {
+        "a": "Detailed scientific reports usually require comprehensive information, which doesn't align with the purpose of abbreviations meant for brevity.",
+        "b": "Lengthy narratives would not benefit as much from abbreviations, as they are typically more detailed and require more comprehensive communication.",
+        "c": "Short, routine communications benefited most from Morse code abbreviations as they allowed for quicker and more efficient transmission of simple messages, reducing time and costs.",
+        "d": "While personal letters could use abbreviations, they are not as directly impacted by them compared to short, routine communications where brevity is more beneficial."
       },
     
       "correctAnswer": "c",
@@ -164,24 +164,6 @@
       "difficulty": "Intermediate"
     },   
     {
-      "question": "What role do prosigns play in Morse code communication?",
-      "answers": {
-        "a": "Shorten messages",
-        "b": "Express common words",
-        "c": "Signify the recipient’s location",
-        "d": "Provide context"
-      },
-      "explanations": {
-        "a": "Prosigns provide context but are not specifically meant to shorten messages.",
-        "b": "Prosigns do not express common words but serve other purposes.",
-        "c": "Prosigns do not signify the recipient's location; they provide context within a message.",
-        "d": "Prosigns in Morse code are special signals used to provide context within a message, indicating things like the end of a message or an invitation for a response.        "
-      },
-     
-      "correctAnswer": "d",
-      "difficulty": "Intermediate"
-    },
-    {
       "question": "What is the primary function of Morse code abbreviations when it comes to numerical data?",
       "answers": {
         "a": "To make numeric values more complex",
@@ -241,7 +223,7 @@
         "a": "They make numeric values more complex",
         "b": "They increase the length of numbers",
         "c": "They simplify the transmission of numeric values",
-        "d": "hey reduce the clarity of numeric communication"
+        "d": "They reduce the clarity of numeric communication"
       },
       "explanations": {
         "a": "Morse code abbreviations simplify the encoding of numeric values, not make them more complex.",

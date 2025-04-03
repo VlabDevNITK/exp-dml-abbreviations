@@ -1,11 +1,11 @@
 ### References
 
 <table style="text-align:justify;">
-<tr style="background-color: white">
+<tr style="background-color: transparent;">
 <th>References</th>
 <th>Contributors list</th>
 </tr>
-<tr style="background-color: white">
+<tr style="background-color: transparent">
 <td>
 <ol style="width: 500px">
 <li>Hossell, K. P. (2003). Morse code (1st ed., pp. 8, 10, 39). Heinemann/Raintree (1 March 2003).</li></br>
@@ -19,7 +19,6 @@ Contributors :
 <ul style="list-style-type: none;">
 <li>Prajwal Kumar | NITK</li>
 <li>Shraddha Shetty | NITK</li>
-<li>Anusha B Salian | NITK</li>
 </ul></td>
 </tr>
 </table>
