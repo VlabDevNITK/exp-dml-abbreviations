@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOLVE</title>
+  <meta name="description" content="A small project to remonstrate media queries and other responsive design patterns.">
+  <meta name="author" content="Rocco P">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
@@ -23,7 +25,7 @@
     <div class="main-canvas">
       <div class="simsubscreen" id="canvas0">
         <div class="grid-page1">
-          <h4 class="incanvas" style="font-size:17px;">Objective:</h4>
+          <h4 class="incanvas">Objective:</h4>
           <p class="incanvas"  style="font-size:14px;text-align: justify;">To expedite communication by using shorter
             representations for common words, alphabet, numbers, and providing context, thereby enhancing the efficiency
             of Morse code transmissions. </p>
@@ -31,7 +33,7 @@
           <br />
 
           <br>
-          <h4 class="incanvas" style="font-size:17px;">Description:</h4>
+          <h4 class="incanvas">Description:</h4>
 
           <p class="incanvas" style="font-size:14px; text-align: justify;">
             Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that
@@ -289,7 +291,9 @@
         <img id="nextButton" onclick="navNext()" src="images/Next.png" alt="" /></a>
 
       </div>
-      <div id="copyright"> &copy; <script>document.write("2024 - ");
+      <div id="copyright"> &copy; <script>
+          document.write(new Date().getFullYear() - 1);
+          document.write("-");
           document.write(new Date().getFullYear());
         </script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
     </div>
